@@ -167,21 +167,21 @@ export default class SAtvCardComponent extends SWebComponent {
 		this.style.transform = 'perspective('+ (this.props.perspective || w*3) +'px)';
 
 		if(supportsTouch){
-			window.preventScroll = false;
-			this.addEventListener('touchmove', function(e){
-				if (window.preventScroll){
-					e.preventDefault();
-				}
-				this._processMovement(e,true);
-			});
-            this.addEventListener('touchstart', function(e){
-            	window.preventScroll = true;
-				this._processEnter(e);
-			});
-			this.addEventListener('touchend', function(e){
-				window.preventScroll = false;
-				this._processExit(e);
-			});
+			// window.preventScroll = false;
+			// this.addEventListener('touchmove', function(e){
+			// 	if (window.preventScroll){
+			// 		e.preventDefault();
+			// 	}
+			// 	this._processMovement(e,true);
+			// });
+            // this.addEventListener('touchstart', function(e){
+            // 	window.preventScroll = true;
+			// 	this._processEnter(e);
+			// });
+			// this.addEventListener('touchend', function(e){
+			// 	window.preventScroll = false;
+			// 	this._processExit(e);
+			// });
 	    } else {
 			this.addEventListener('mousemove', function(e){
 				this._processMovement(e,false);
@@ -197,8 +197,8 @@ export default class SAtvCardComponent extends SWebComponent {
 
 	_processMovement(e, touchEnabled) {
 
-		let bdst = this.ownerDocument.body.scrollTop,
-			bdsl = this.ownerDocument.body.scrollLeft,
+		let bdst = window.pageYOffset || this.ownerDocument.documentElement.scrollTop || this.ownerDocument.body.scrollTop || 0,
+			bdsl = window.pageXOffset || this.ownerDocument.documentElement.scrollLeft || this.ownerDocument.body.scrollLeft || 0,
 			pageX = (touchEnabled)? e.touches[0].pageX : e.pageX,
 			pageY = (touchEnabled)? e.touches[0].pageY : e.pageY,
 			offsets = this.getBoundingClientRect(),

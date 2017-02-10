@@ -25,7 +25,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 /**
  * @name 	SAtvCardComponent
  * @extends 	SWebComponent
- * Create a nice apple tv card effect with a cool reflection effect.
+ * Create a nice apple tv card effect with a cool dynamic reflection effect.
  * @example 	html
  * <s-atv-card>
  * 	<article class="card">
@@ -126,21 +126,21 @@ var SAtvCardComponent = function (_SWebComponent) {
 			this.style.transform = 'perspective(' + (this.props.perspective || w * 3) + 'px)';
 
 			if (supportsTouch) {
-				window.preventScroll = false;
-				this.addEventListener('touchmove', function (e) {
-					if (window.preventScroll) {
-						e.preventDefault();
-					}
-					this._processMovement(e, true);
-				});
-				this.addEventListener('touchstart', function (e) {
-					window.preventScroll = true;
-					this._processEnter(e);
-				});
-				this.addEventListener('touchend', function (e) {
-					window.preventScroll = false;
-					this._processExit(e);
-				});
+				// window.preventScroll = false;
+				// this.addEventListener('touchmove', function(e){
+				// 	if (window.preventScroll){
+				// 		e.preventDefault();
+				// 	}
+				// 	this._processMovement(e,true);
+				// });
+				// this.addEventListener('touchstart', function(e){
+				// 	window.preventScroll = true;
+				// 	this._processEnter(e);
+				// });
+				// this.addEventListener('touchend', function(e){
+				// 	window.preventScroll = false;
+				// 	this._processExit(e);
+				// });
 			} else {
 				this.addEventListener('mousemove', function (e) {
 					this._processMovement(e, false);
@@ -157,8 +157,8 @@ var SAtvCardComponent = function (_SWebComponent) {
 		key: '_processMovement',
 		value: function _processMovement(e, touchEnabled) {
 
-			var bdst = this.ownerDocument.body.scrollTop,
-			    bdsl = this.ownerDocument.body.scrollLeft,
+			var bdst = window.pageYOffset || this.ownerDocument.documentElement.scrollTop || this.ownerDocument.body.scrollTop || 0,
+			    bdsl = window.pageXOffset || this.ownerDocument.documentElement.scrollLeft || this.ownerDocument.body.scrollLeft || 0,
 			    pageX = touchEnabled ? e.touches[0].pageX : e.pageX,
 			    pageY = touchEnabled ? e.touches[0].pageY : e.pageY,
 			    offsets = this.getBoundingClientRect(),
