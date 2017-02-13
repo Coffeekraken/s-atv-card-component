@@ -97,8 +97,6 @@ export default class SAtvCardComponent extends SWebComponent {
 			}
 			.${componentNameDash}-container {
 				position: relative;
-				width: 100%;
-				height: 100%;
 				transition: all 0.2s ease-out;
 			}
 			.${componentNameDash}-layer {
