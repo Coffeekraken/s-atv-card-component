@@ -5,15 +5,8 @@ module.exports = {
 	// title
 	title : 's-atv-card-component',
 
-	// logo
-	logo : null,
-
 	// layout
 	layout : 'right',
-
-	// compile server configurations
-	compileServer : {
-	},
 
 	// editors
 	editors : {
@@ -70,8 +63,8 @@ module.exports = {
 		js : {
 			language : 'js',
 			data : `
-				require('webcomponents.js/webcomponents-lite');
-				import SAtvCardComponent from './dist/index';
+				import 'webcomponents.js/webcomponents-lite'
+				import SAtvCardComponent from './dist/index'
 			`
 		}
 	}

@@ -39,6 +39,13 @@
     "coffeekraken"
   ],
   "author": "Coffeekraken <hello@coffeekraken.io>",
+  "contributors": [
+  {
+    "name": "Olivier Bossel",
+    "email": "olivier.bossel@gmail.com",
+    "url": "http://olivierbossel.com"
+  }
+],
   "license": "MIT",
   "dependencies": {
     "coffeekraken-sugar": "git+ssh://git@github.com/Coffeekraken/sugar.git#release/0.0.1",
