@@ -14,19 +14,9 @@ module.exports = {
 			language : 'html',
 			data : `
 				<div class="container">
-					<s-atv-card>
+					<s-atv-card amount=".3">
 						<article class="card">
-	 						<figure class="ratio-16-9">
-								<img class="abs-cover" src="http://coffeekraken.io/dist/img/contribute-issues.jpg" />
-							</figure>
-							<div class="card__content">
-								<h1 class="h3 m-b">
-									Hello World
-								</h1>
-								<p class="p">
-									In tempus leo eu semper gravida. Sed molestie ex porta fermentum imperdiet. Vivamus nec libero at tellus suscipit fermentum sit amet sed nibh. Lorem ipsum dolor sit amet, consectetur adipiscing.
-								</p>
-							</div>
+							<img src="http://www.hollywoodreporter.com/sites/default/files/custom/Blog_Images/interstellar3.jpg" />
 						</article>
 					</s-atv-card>
 				</div>
@@ -40,23 +30,18 @@ module.exports = {
 				@include s-classes();
 				@include s-typography-classes();
 				body {
-					background: linear-gradient(to left, #f46b45 , #eea849);
+					background: linear-gradient(to bottom, #f6f7fc 0%, #d5e1e8 40%);
 				}
 				.container {
 					@include s-position(absolute, middle, center);
 				}
 				.card {
-					max-width : 400px;
-					@include s-depth(2);
-					background: white;
-
-					&:hover {
-						@include s-depth(20);
+					@include s-depth(20);
+					position:relative;
+					max-width:400px;
+					img {
+						width:100%;
 					}
-				}
-				.card__content {
-					padding: s-rem(40px);
-					transform:translate3d(0,0,20px);
 				}
 			`
 		},
