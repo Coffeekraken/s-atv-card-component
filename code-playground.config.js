@@ -14,7 +14,7 @@ module.exports = {
 			language : 'html',
 			data : `
 				<div class="container">
-					<s-atv-card amount=".3">
+					<s-atv-card amount=".3" perspective="700">
 						<article class="card">
 							<img src="http://www.hollywoodreporter.com/sites/default/files/custom/Blog_Images/interstellar3.jpg" />
 						</article>
