@@ -8,6 +8,14 @@ module.exports = {
 	// layout
 	layout : 'right',
 
+	// compile server
+	compileServer : {
+
+		// compile server port
+		port : 4001
+
+	},
+
 	// editors
 	editors : {
 		html : {
