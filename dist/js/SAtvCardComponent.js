@@ -209,14 +209,14 @@ var SAtvCardComponent = function (_SWebComponent) {
 			this.$refs.shine.style.cssText = '';
 		}
 	}], [{
-		key: 'css',
+		key: 'defaultCss',
 
 
 		/**
    * Css
    * @protected
    */
-		value: function css(componentName, componentNameDash) {
+		value: function defaultCss(componentName, componentNameDash) {
 			return '\n\t\t\t' + componentNameDash + ' {\n\t\t\t\tdisplay : inline-block;\n\t\t\t}\n\t\t\t.' + componentNameDash + ' {\n\t\t\t\ttransform-style: preserve-3d;\n\t\t\t\t-webkit-tap-highlight-color: rgba(#000,0);\n\t\t\t}\n\t\t\t.' + componentNameDash + '-container {\n\t\t\t\tposition: relative;\n\t\t\t\ttransition: all 0.2s ease-out;\n\t\t\t}\n\t\t\t.' + componentNameDash + '-layer {\n\t\t\t\tposition:relative;\n\t\t\t\ttransition: all 0.1s ease-out;\n\t\t\t\ttransform-style: preserve-3d;\n\t\t\t}\n\t\t\t.' + componentNameDash + '-shine {\n\t\t\t\tposition: absolute;\n\t\t\t\ttop: 0;\n\t\t\t\tleft: 0;\n\t\t\t\tright: 0;\n\t\t\t\tbottom: 0;\n\t\t\t\topacity:0;\n\t\t\t\tbackground: linear-gradient(135deg, rgba(255,255,255,.25) 0%,rgba(255,255,255,0) 60%);\n\t\t\t\ttransform:translate3d(0,0,1px);\n\t\t\t\ttransform-style: preserve-3d;\n\t\t\t\ttransition: opacity .2s ease-in-out;\n\t\t\t}\n\t\t\t' + componentNameDash + ':hover .' + componentNameDash + '-shine {\n\t\t\t\topacity:1;\n\t\t\t}\n\t\t';
 		}
 	}, {
