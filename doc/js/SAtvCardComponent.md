@@ -2,7 +2,7 @@
 
 Extends **SWebComponent**
 
-Create a nice apple tv card effect with a cool reflection effect.
+Create a nice apple tv card effect with a cool dynamic reflection effect.
 
 ### Example
 ```html

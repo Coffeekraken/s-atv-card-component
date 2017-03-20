@@ -129,7 +129,7 @@ export default class SAtvCardComponent extends SWebComponent {
 	 */
 	componentWillMount() {
 		super.componentWillMount();
-		this.$refs = {};
+		this._refs = {};
 	}
 
 	/**
@@ -146,20 +146,20 @@ export default class SAtvCardComponent extends SWebComponent {
 
 		this.classList.add(this._componentNameDash);
 
-		this.$refs.card = this.querySelector('*:first-child');
+		this._refs.card = this.querySelector('*:first-child');
 
 		const shineElm = this.querySelector(`${this._componentNameDash}-shine`);
 		if (shineElm) {
-			this.$refs.shine = shineElm;
+			this._refs.shine = shineElm;
 		} else {
 			const shineHTML = this.ownerDocument.createElement('div');
-			this.$refs.card.appendChild(shineHTML);
-			this.$refs.shine = shineHTML;
+			this._refs.card.appendChild(shineHTML);
+			this._refs.shine = shineHTML;
 		}
-		this.$refs.shine.classList.add(`${this._componentNameDash}-shine`);
+		this._refs.shine.classList.add(`${this._componentNameDash}-shine`);
 
 		this.classList.add(`${this._componentNameDash}-container`);
-		this.$refs.card.classList.add(`${this._componentNameDash}-layer`);
+		this._refs.card.classList.add(`${this._componentNameDash}-layer`);
 
 		let w = this.clientWidth || this.offsetWidth || this.scrollWidth;
 		this.style.transform = 'perspective('+ (this.props.perspective || w*3) +'px)';
@@ -219,19 +219,19 @@ export default class SAtvCardComponent extends SWebComponent {
 		}
 
 		// apply the card transform
-		this.$refs.card.style.transform = imgCSS;
+		this._refs.card.style.transform = imgCSS;
 
 		//gradient angle and opacity for shine
-		this.$refs.shine.style.background = 'linear-gradient(' + angle + 'deg, rgba(255,255,255,' + (pageY - offsets.top - bdst)/h * 0.4 + ') 0%,rgba(255,255,255,0) 80%)';
+		this._refs.shine.style.background = 'linear-gradient(' + angle + 'deg, rgba(255,255,255,' + (pageY - offsets.top - bdst)/h * 0.4 + ') 0%,rgba(255,255,255,0) 80%)';
 	}
 
 	_processEnter(e) {
-		this.$refs.card.classList.add('over');
+		this._refs.card.classList.add('over');
 	}
 
 	_processExit(e) {
-		this.$refs.card.classList.remove('over');
-		this.$refs.card.style.transform = '';
-		this.$refs.shine.style.cssText = '';
+		this._refs.card.classList.remove('over');
+		this._refs.card.style.transform = '';
+		this._refs.shine.style.cssText = '';
 	}
 }
