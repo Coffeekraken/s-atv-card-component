@@ -41,7 +41,6 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 /**
  * @name 	SAtvCardComponent
  * Create a nice apple tv card effect with a cool reflection effect.
- * @styleguide 	Blocks / ATV Card
  * @example 	html
  * <style>
  * 	s-atv-card {
