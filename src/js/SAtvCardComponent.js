@@ -20,7 +20,6 @@ import __prependChild from 'coffeekraken-sugar/js/dom/prependChild'
  /**
   * @name 	SAtvCardComponent
   * Create a nice apple tv card effect with a cool reflection effect.
-  * @styleguide 	Blocks / ATV Card
   * @example 	html
   * <style>
   * 	s-atv-card {
