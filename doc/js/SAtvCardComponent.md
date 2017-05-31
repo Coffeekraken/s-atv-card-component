@@ -18,9 +18,32 @@ Author : Olivier Bossel <olivier.bossel@gmail.com>
 
 
 
-## Examples
 
-Here's some usage examples.
+## Attributes
+
+Here's the list of available attribute to set on the element.
+
+### amount
+
+Amount of effect to apply
+
+Type : **{ [Number](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Number) }**
+
+Default : **1**
+
+
+### perspective
+
+Set the CSS perspective to use for the particular card.
+If not specified, will be calculated to apply something nice.
+
+Type : **{ [Number](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Number) }**
+
+
+
+
+## Methods
+
 
 ### SAtvCardComponent
 
@@ -50,26 +73,3 @@ Create a nice apple tv card effect with a cool reflection effect.
 </s-atv-card>
 ```
 Author : Olivier Bossel <olivier.bossel@gmail.com>
-
-
-## Attributes
-
-Here's the list of available attribute to set on the element.
-
-### amount
-
-Amount of effect to apply
-
-Type : **{ [Number](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Number) }**
-
-Default : **1**
-
-
-### perspective
-
-Set the CSS perspective to use for the particular card.
-If not specified, will be calculated to apply something nice.
-
-Type : **{ [Number](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Number) }**
-
-Default : **null**
