@@ -1,6 +1,6 @@
 {
   "name": "coffeekraken-s-atv-card-component",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "Create a nice apple tv card effect with a cool dynamic reflection effect.",
   "main": "dist/index.js",
   "homepage": "http://coffeekraken.io",
@@ -46,7 +46,7 @@
   }],
   "license": "MIT",
   "dependencies": {
-    "coffeekraken-sugar": "^0.0.2"
+    "coffeekraken-sugar": "^1.0.0"
   },
   "devDependencies": {
     "babel-cli": "^6.18.0",

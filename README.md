@@ -19,8 +19,8 @@
 	<a href="https://github.com/coffeekraken/s-atv-card-component">
 		<img src="https://img.shields.io/github/stars/coffeekraken/s-atv-card-component.svg?style=social&label=Star&style=flat-square" />
 	</a> -->
-	<a href="https://twitter.com/{twitter-username}">
-		<img src="https://img.shields.io/twitter/url/http/{twitter-username}.svg?style=social&style=flat-square" />
+	<a href="https://twitter.com/coffeekrakenio">
+		<img src="https://img.shields.io/twitter/url/http/coffeekrakenio.svg?style=social&style=flat-square" />
 	</a>
 	<a href="http://coffeekraken.io">
 		<img src="https://img.shields.io/twitter/url/http/shields.io.svg?style=flat-square&label=coffeekraken.io&colorB=f2bc2b&style=flat-square" />
