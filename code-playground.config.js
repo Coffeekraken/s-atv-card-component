@@ -1,6 +1,6 @@
 module.exports = {
 	// server port
-	port : 3001,
+	port : 3000,
 
 	// title
 	title : 's-atv-card-component',
@@ -12,7 +12,7 @@ module.exports = {
 	compileServer : {
 
 		// compile server port
-		port : 4001
+		port : 4000
 
 	},
 
@@ -34,6 +34,7 @@ module.exports = {
 			language : 'sass',
 			data : `
 				@import 'node_modules/coffeekraken-sugar/index';
+				@import 'node_modules/coffeekraken-s-typography-component/index';
 				@include s-init();
 				@include s-classes();
 				@include s-typography-classes();
