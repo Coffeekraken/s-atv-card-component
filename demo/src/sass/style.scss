@@ -1,0 +1,16 @@
+@import 'node_modules/coffeekraken-sugar/index';
+@import 'node_modules/coffeekraken-s-typography-component/index';
+@include s-init();
+@include s-classes();
+@include s-typography-classes();
+body {
+	padding: s-space(big);
+}
+.card {
+	@include s-depth(20);
+	position:relative;
+	max-width:400px;
+	img {
+		width:100%;
+	}
+}

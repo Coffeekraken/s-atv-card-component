@@ -1,13 +1,13 @@
 module.exports = {
 	entry: {
-		'demo/dist/js/demo.js' : './demo/src/js/demo.js'
+		'demo/dist/js/app.js' : './demo/src/js/app.js'
 	},
 	output: {
-		path: '.',
+		path: require('path').resolve('.'),
 		filename: '[name]',
 	},
 	module: {
-		loaders: [{
+		rules: [{
 			test: /\.js$/,
 			exclude: /(bower_components|node_modules)/,
 			loader: 'babel-loader'
