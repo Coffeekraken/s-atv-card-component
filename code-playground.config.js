@@ -57,7 +57,6 @@ module.exports = {
 		js : {
 			language : 'js',
 			data : `
-				import 'webcomponents.js/webcomponents-lite'
 				import SAtvCardComponent from './dist/index'
 			`
 		}
