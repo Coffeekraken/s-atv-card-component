@@ -29,6 +29,8 @@
 
 Create a nice apple tv card effect with a cool dynamic reflection effect.
 
+[![View demo](http://components.coffeekraken.io/assets/img/view-demo.png)](http://components.coffeekraken.io/app/s-atv-card-component)
+
 ## Table of content
 
 1. **[Demo](http://components.coffeekraken.io/app/s-atv-card-component)**
